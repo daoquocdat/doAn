@@ -1,0 +1,628 @@
+
+body{
+	margin: 0;
+	padding: 0;
+
+} 
+
+.link-download-code{
+	z-index: 10;
+	border-radius: 3px;
+	border: 1px solid red;
+	background-color: black;
+	color: white;
+	display: block ;
+	position: fixed;
+	text-decoration: none;
+	
+	
+}
+.link-download{
+	text-decoration: none;
+	font-size: 20px;
+}
+
+/*-------------------------------------------------*/
+/*CSS LOGIN_INTERFACE*/
+
+
+.login-interface{
+	width: 100%;
+	height: 100%;
+} 
+.login-interface img{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+
+
+.login{
+	z-index: 10;
+	width: 20%;
+	height: 30%;
+	border-radius: 3px;
+	border: 1px solid red;
+	background-color: black;
+	color: red;
+	display: block ;
+	position: fixed;
+	top: 35%;
+	bottom: 35%;
+	left: 40%;
+	right: 40%;
+    
+}
+.login .login-textbox input:focus{
+	outline: 1px solid red;
+}
+
+.login .login-textbox input{
+	margin-right: -10px;
+}
+
+.login h2{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+
+.login-textbox{
+	padding: 5px;
+}
+
+.btn-login{
+	background-color: red;
+	width: 20%;
+	height: 30px;
+	color: red;
+	border-radius: 20px;
+	background: #121212;
+	box-shadow: inset 20px 20px 60px #070707, 
+            inset -20px -20px 60px #1d1d1d;
+	
+}
+
+.error-message{
+	margin-top: 5px;
+}
+
+/*END CSS LOGIN_INTERFACE
+/*----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+/* 
+	CSS ADMIN_INTERFACE.PHP
+*/
+.admin-interface{
+	margin-top:10px;
+	background: url(../img/welcome.jpg) no-repeat;  
+	background-position: center;
+	background-size: cover;
+}
+
+/*
+	END CSS ADMIN_INTERFACE.PHP
+*/
+/*---------------------------------------------*/
+
+
+/*---------------------------------------------*/
+/*CSS HEADER*/
+.header{
+	height: var(--height-header);
+	background-color: var(--text-color);
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+
+
+.header__logo a img{
+	height: var(--height-header);
+	width: 100%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+	
+}
+.header .row{
+	width: 100%;
+	height:100%;
+}
+
+.header__content{
+	width: 100%;
+    height: var(--height-header);
+    display: flex!important;
+    flex-direction: row-reverse;	
+    align-items: center;
+
+
+}
+
+
+.logo--login{
+	padding: 10px 0;
+	display: block;
+}
+
+.logo-login{
+	display: flex;
+	float: right;
+	text-decoration: none;
+	margin-right: 30px;
+
+
+}
+.logo-login span{
+	color: white;
+	font-size: 30px
+}
+.logo-login p{
+	margin-bottom: 0;
+	font-size: 20px;
+}
+.logo--login:hover .infomation-login{
+	display: block;
+
+	
+}
+
+@keyframes fadeGrowth{
+	from{
+		opacity: 0;
+		transform: scale(0);
+	}
+	to{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.infomation-login{
+	position: absolute;
+	margin-top:5px;
+	width: 150px;
+	right: 0;
+	top: 65%;
+	display: none;
+	padding: 0px 5px;
+	background-color: var(--white-color);
+	transform-origin: top center;
+	animation: fadeGrowth ease 0.2s;
+}
+
+.infomation-login li{
+	border-bottom: 1px solid var(--gray-color);
+	line-height: 20px;
+		
+}
+
+.logan-header p{
+	color: var(--gray-color);
+	font-size: 40px;
+	margin-right: 20px;
+	line-height: 40px;
+}
+
+/*END CSS HEADER*/
+
+/*-----------------------------------------------*/
+
+/*CSS sidebar for mobile*/
+.container__sidebar-menu--Mobile{
+	width: 28px;
+	height: 28px;
+	display: block;
+	margin-left: 8px;
+}
+
+.container__sidebar-menu--Mobile__overlay{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.3);
+}
+
+.container__sidebar--Mobile{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 320px;
+	max-width: 320px;
+	background-color: #fff;
+	z-index: 99;
+}
+
+.container__sidebar-menu--Mobile{
+	text-decoration: none;
+	list-style: none;
+}
+/*End CSS sidebar for mobile*/
+
+/*----------------------------------------------------*/
+
+/*CSS SIDEBAR MENU*/
+.container{
+
+}
+
+.container__sidebar{
+	background-color: var(--text-color);
+}
+
+.container__sidebar-menu{
+	width: 100%;
+	/*height:100%;*/
+	padding-top: 10px;
+	list-style-type: none;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	overflow-x: hidden;
+
+}
+
+.container__sidebar-menu-item{
+	width: 100%;
+	height: 100%;
+	/*border: 1px solid red;*/
+	border-radius: 5px;
+	padding: 1.5rem 2rem;
+	cursor: pointer;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	align-content: center;
+	/*background-color:var(--white-color);*/
+	position: relative;
+	
+}
+
+.container__sidebar-menu-item a{
+	text-decoration: none;
+	display: block;
+	color:var(--black-color);
+
+}
+
+.dropdown-menu-item, .container__sidebar-menu-item a{
+	width: 100%;
+	color:white;
+}
+
+.dropdown-menu-item li{
+	border: 1px solid red;
+} 
+
+.container__sidebar-menu-item__ul{
+	display: none;
+	width: 100%;
+	position: absolute;
+	list-style-type: none;
+	z-index: 10;
+}
+
+/*.container__sidebar-menu-item__ul li{
+	width: 100%;
+	top: 0;
+	right: 0;
+	border: 1px solid #fff;
+}*/
+
+/*.container__sidebar-menu-item__ul li a{
+	text-decoration: none;
+}*/
+
+.show{
+	display: block;
+}
+/*END CSS SIDEBAR MENU*/
+/*---------------------------------------------------------*/
+
+
+/*----------------------------------------------------------*/
+/*CSS MEMBER*/
+
+.search-member{
+	height: 30px;
+	margin-bottom: 10px;
+}
+.center{
+	text-align: center !important;
+}
+
+.member-interface{
+	margin-top:10px;
+	background: url(../img/teamwork3.jpg) no-repeat;  
+	background-position: center;
+}
+
+
+
+.member-interface .row{
+	margin:0px auto;
+	clear: both;
+}
+
+.member-interface__view{
+	border: 2px solid #607d8b;
+	color: #000;
+	display: block;
+	border-radius: 2px;
+	text-align: center;
+	font-weight: 900;
+}
+
+.member-interface__view-item{
+	border: 2px solid #607d8b;
+	color:	blue;
+	font-weight: 900;
+	border-radius: 2px;
+	text-align: left;
+}
+
+.removed{
+	width: 100%;
+	height: 100%;
+	color: #333;
+}
+
+.removed:hover{
+	color: red;
+}
+
+.icon-remove{
+	margin-left: 15px; 
+}
+.list-member{
+	justify-content: space-between;
+}
+
+.btn-add-member{
+	height: 100%;
+    width: 20%;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid blue;
+    background-color: #00d7ff;
+    cursor: pointer;
+    color: black;
+}
+
+.btn-list-member{
+	width: 200px;
+	height: auto;
+	background-color: #0ff;
+}
+
+/*-----*/
+
+.list-member--input:checked ~ .list-member--overlay{
+	display: block;
+}
+
+.list-member--input:checked ~ .member-interface--add-member{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+.list-member--overlay{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.6);
+	display: none;
+	animation:fadeIn linear 0.2s;
+}
+
+.member-interface--add-member{
+	background-color: #fff;
+	position: fixed;
+	top: 25%;
+	left: 30%;
+	bottom: 25%;
+	right: 30%;
+	width: 500px;
+	transform: translateY(-150%);
+	opacity: 0;
+	transition: transform linear 0.3s, opacity linear 0.3s;
+}
+
+.member-interface--add-member__close{
+	/*font-size: 32px;*/
+	width: 24px;
+	height: 24px;
+	color: #666;
+	position: absolute;
+	top: 0.2rem;
+	right: 0.5rem;
+}
+.interface-row{
+
+}
+
+.return{
+	margin-bottom: 20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr.status-remove {
+	color: red;
+}
+
+
+.icon-remove{
+	font-size: 20px;
+}
+
+.form--add-member{
+	padding-left: 5px;
+	padding-top: 5px;
+}
+.form--add-member .row{
+	margin-top: 5px;
+}
+
+.form--add-member .row input{
+	padding: 0px 0px;
+}
+
+.member-interface--add-member{
+
+}
+
+
+.member-interface--add-member h2{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.add-member-btn{
+	margin-top: 5px;
+	background-color: #00d7ff;
+	width: 60px;
+	height: 30px;
+	border-radius: 3px;
+}
+.text-form-add-member{
+	color: blue;
+}
+.form-id{
+	margin-left: 23px;
+}
+
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+/*END CSS MEMBER*/
+/*----------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------*/
+/*CSS FAQs */
+.faqs-interface{
+	margin-top:10px;
+	background-color: #747170;
+	width: 100%;
+	height: 100%;
+
+}
+
+.faqs-interface__title{
+	height: var(--height-header);
+	width: 100%;
+	background-color: #00d7ff; /* Dành cho các trình duyệt không hỗ trợ gradient*/
+  	background-image: linear-gradient(#00d7ff, #001896); 
+  	font-size: 40px;
+  	text-align: center;
+  	color: white;
+}
+.faqs-interface__content{
+	width: 100%;
+}
+
+.faqs-interface__content--item{
+	background-color: #fff;
+	margin-bottom: 30px;
+}
+.faqs-interface__content--item-title{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	font-size: 32px;
+	border-bottom: 1px solid #ececec;
+    padding: 33px 30px;
+}
+.faqs-interface__content--item-title span{
+	font-size: 32px;
+	margin-right: 30px;
+}
+
+.faqs-interface__content--item-content{
+
+}
+li{
+	list-style: none;
+}
+li a{
+	text-decoration: none;
+}
+.item-content{
+	padding: 20px 0;
+}
+
+.item-content li a{
+	color: #00d7ff;
+	font-weight: 700;	
+	line-height: 24px;
+	font-size: 18px;
+}
+
+.item-content__icon{
+	color: #c5cad4;
+    margin: 6px 10px 0 0;
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*END CSS FAQs*/
+/*------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*CSS PRODUCT*/
+.flex{
+	display: flex!important;
+}
+
+.m-3{
+	margin: 0!important;
+}
+
+.view-product-interface{
+	margin-top: 10px;
+}
+.list-product{
+	margin-bottom: 10px;
+	justify-content: space-between;
+}
+
+/*END CSS PRODUCT*/
+/*--------------------------------------------------------------*/

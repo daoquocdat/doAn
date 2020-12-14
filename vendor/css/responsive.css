@@ -1,0 +1,18 @@
+@media(max-width: 1023px) {
+	.container__sidebar-menu--Mobile{
+		display: block;
+	}
+
+}
+@media(min-width: 1024px) {
+
+	.container__sidebar--Mobile{
+		display: none;
+	}
+	.container__sidebar-menu--Mobile{
+		display: none;
+	}
+	.container__sidebar-menu--Mobile__overlay{
+		display: none;
+	}
+}
